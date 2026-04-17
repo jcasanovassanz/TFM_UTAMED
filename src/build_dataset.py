@@ -1,6 +1,9 @@
 import yfinance as yf
 import pandas as pd
 
+from feature_engineering import add_features
+from macro_loader import load_macro
+
 # -----------------------
 # CONFIG
 # -----------------------
@@ -140,7 +143,7 @@ print(df.info())
 print("\nDistribución target:")
 print(df["target"].value_counts(normalize=True))
 
-from feature_engineering import add_features
+
 
 df = add_features(df)
 
@@ -169,7 +172,7 @@ print(df.groupby("date")["rank_ret_3m"].describe().head())
 
 # Cargar variables macro
 
-from macro_loader import load_macro
+
 
 macro = load_macro()
 
