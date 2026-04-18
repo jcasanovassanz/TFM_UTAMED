@@ -8,7 +8,9 @@ from macro_loader import load_macro
 # CONFIG
 # -----------------------
 
-tickers = ["SAP.DE", "MC.PA"]  # empieza con pocos
+tickers = ["SAP.DE", "MC.PA", "ASML.AS", "AIR.PA",
+    "SAN.MC", "BNP.PA", "SIE.DE", "BAS.DE",
+    "ADS.DE", "OR.PA"]  # empieza con pocos
 start = "2010-01-01"
 end = "2024-12-31"
 

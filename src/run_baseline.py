@@ -1,6 +1,7 @@
 import pandas as pd
 
 from model import run_walk_forward_validation
+from model import run_walk_forward_validation_rf
 
 # -----------------------
 # CARGA DATASET
@@ -60,3 +61,25 @@ print(results_market.mean(numeric_only=True))
 
 print("\nMedia modelo mercado + macro:")
 print(results_macro.mean(numeric_only=True))
+
+# -----------------------
+# RANDOM FOREST
+# -----------------------
+
+results_rf_market = run_walk_forward_validation_rf(
+    df,
+    features_market,
+    start_test_year=2015
+)
+
+results_rf_macro = run_walk_forward_validation_rf(
+    df,
+    features_macro,
+    start_test_year=2015
+)
+
+print("\nRandom Forest - solo mercado:")
+print(results_rf_market.mean(numeric_only=True))
+
+print("\nRandom Forest - mercado + macro:")
+print(results_rf_macro.mean(numeric_only=True))
