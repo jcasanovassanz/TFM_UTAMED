@@ -8,9 +8,29 @@ from macro_loader import load_macro
 # CONFIG
 # -----------------------
 
-tickers = ["SAP.DE", "MC.PA", "ASML.AS", "AIR.PA",
-    "SAN.MC", "BNP.PA", "SIE.DE", "BAS.DE",
-    "ADS.DE", "OR.PA"]  # empieza con pocos
+tickers = [
+    "SAP.DE",
+    "ASML.AS",
+    "MC.PA",
+    "OR.PA",
+    "AIR.PA",
+    "SAN.PA",
+    "BNP.PA",
+    "AI.PA",
+    "SU.PA",
+    "KER.PA",
+    "BAS.DE",
+    "ALV.DE",
+    "ADS.DE",
+    "IFX.DE",
+    "DTE.DE",
+    "ENEL.MI",
+    "ENI.MI",
+    "ISP.MI",
+    "IBE.MC",
+    "SAN.MC"
+]  # empieza con pocos
+
 start = "2010-01-01"
 end = "2024-12-31"
 
@@ -231,3 +251,7 @@ print(f"\nDataset guardado en: {output_path}")
 print(f"Número de filas: {len(df)}")
 print(f"Número de columnas: {df.shape[1]}")
 
+
+
+
+print("Tickers únicos:", df["ticker"].nunique())
