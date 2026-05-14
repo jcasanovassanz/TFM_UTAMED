@@ -1,0 +1,2 @@
+generated_at_utc,script,dataset_path,n_rows,n_columns,start_test_year,n_configurations,feature_set_market,feature_set_market_macro
+2026-05-14T20:59:28.107326+00:00,src/run_baseline.py,data/processed/panel_dataset_v1.csv,3440,15,2015,6,"return_lag1,ret_3m,ret_6m,vol_3m,vol_6m,excess_return,rank_ret_3m","return_lag1,ret_3m,ret_6m,vol_3m,vol_6m,excess_return,rank_ret_3m,inflation,interest_rate,unemployment"

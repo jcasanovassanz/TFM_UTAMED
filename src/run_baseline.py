@@ -1,4 +1,5 @@
 import os
+from datetime import datetime, timezone
 import pandas as pd
 
 from model import run_walk_forward_validation
@@ -148,3 +149,18 @@ results_xgb_market.to_csv("results/xgb_market_by_year.csv", index=False)
 results_xgb_macro.to_csv("results/xgb_macro_by_year.csv", index=False)
 
 print("\nArchivos guardados en la carpeta /results")
+
+run_info = pd.DataFrame([
+    {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "script": "src/run_baseline.py",
+        "dataset_path": "data/processed/panel_dataset_v1.csv",
+        "n_rows": len(df),
+        "n_columns": len(df.columns),
+        "start_test_year": 2015,
+        "n_configurations": 6,
+        "feature_set_market": ",".join(features_market),
+        "feature_set_market_macro": ",".join(features_macro),
+    }
+])
+run_info.to_csv("results/run_info.csv", index=False)
