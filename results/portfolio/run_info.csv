@@ -1,2 +1,2 @@
 generated_at_utc,script,dataset_path,n_rows,n_columns,start_test_year,top_pct,n_configurations
-2026-05-14T20:59:32.360412+00:00,src/run_portfolio.py,data/processed/panel_dataset_v1.csv,3440,15,2015,0.2,6
+2026-05-15T17:38:06.790911+00:00,src/run_portfolio.py,data/processed/panel_dataset_v1.csv,3440,15,2015,0.2,6
