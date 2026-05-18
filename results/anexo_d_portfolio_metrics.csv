@@ -1,0 +1,7 @@
+model,feature_set,cumulative_return,annualized_volatility,sharpe_ratio,max_drawdown
+Logistic Regression,Market,2.7359,0.246,0.5831,-0.4278
+Random Forest,Market,2.1145,0.2136,0.5734,-0.285
+XGBoost,Market,3.364,0.218,0.7415,-0.2842
+Logistic Regression,Market + Macro,3.1708,0.2363,0.6614,-0.3987
+Random Forest,Market + Macro,3.141,0.2095,0.742,-0.2762
+XGBoost,Market + Macro,3.4288,0.2147,0.7611,-0.282

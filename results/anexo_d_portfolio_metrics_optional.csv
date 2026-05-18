@@ -1,0 +1,7 @@
+model,feature_set,monthly_return_mean,monthly_return_std,best_month,worst_month,number_of_rebalances
+Logistic Regression,Market,0.0138,0.071,0.3135,-0.3324,118
+Random Forest,Market,0.0115,0.0617,0.26,-0.2011,118
+XGBoost,Market,0.0145,0.0629,0.3084,-0.1989,118
+Logistic Regression,Market + Macro,0.0145,0.0682,0.2548,-0.2937,118
+Random Forest,Market + Macro,0.0139,0.0605,0.2755,-0.2011,118
+XGBoost,Market + Macro,0.0145,0.062,0.3084,-0.1989,118
