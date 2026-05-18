@@ -1,0 +1,83 @@
+TFM_UTAMED/
+├── data
+│   ├── macro
+│   │   ├── .gitkeep
+│   │   └── macro.csv
+│   ├── processed
+│   │   ├── .gitkeep
+│   │   ├── macro_real.csv
+│   │   └── panel_dataset_v1.csv
+│   └── raw
+│       ├── .gitkeep
+│       ├── inflation.csv
+│       ├── interest_rate.csv
+│       └── unemployment.csv
+├── docs
+│   └── .gitkeep
+├── notebooks
+│   ├── portfolio_test.ipynb
+│   └── portfolio_test_debug.ipynb
+├── results
+│   ├── figures
+│   │   ├── auc_evolution_by_year.png
+│   │   ├── equity_curve_comparison.png
+│   │   ├── generar_estructura.py
+│   │   ├── macro_variables_2010_2024.pdf
+│   │   ├── macro_variables_2010_2024.png
+│   │   ├── model_metrics_heatmap.png
+│   │   ├── multiagent_financial_architecture.png
+│   │   ├── project_pipeline_diagram.png
+│   │   ├── target_construction_timeline.png
+│   │   └── walk_forward_validation.png
+│   ├── portfolio
+│   │   ├── cumulative_returns.csv
+│   │   ├── cumulative_returns.png
+│   │   ├── portfolio_metrics.csv
+│   │   ├── portfolio_returns.csv
+│   │   └── run_info.csv
+│   ├── predictions
+│   │   └── out_of_sample_predictions.csv
+│   ├── .gitkeep
+│   ├── anexo_c_walkforward_metrics.csv
+│   ├── anexo_c_walkforward_metrics.xlsx
+│   ├── anexo_d_portfolio_metrics.csv
+│   ├── anexo_d_portfolio_metrics.xlsx
+│   ├── anexo_d_portfolio_metrics_optional.csv
+│   ├── logistic_macro_by_year.csv
+│   ├── logistic_market_by_year.csv
+│   ├── model_comparison_summary.csv
+│   ├── rf_macro_by_year.csv
+│   ├── rf_market_by_year.csv
+│   ├── run_info.csv
+│   ├── xgb_macro_by_year.csv
+│   └── xgb_market_by_year.csv
+├── src
+│   ├── portfolio
+│   ├── build_anexo_c_table.py
+│   ├── build_anexo_d_table.py
+│   ├── build_dataset.py
+│   ├── build_macro_real.py
+│   ├── data_loader.py
+│   ├── feature_engineering.py
+│   ├── generate_macro.py
+│   ├── macro_loader.py
+│   ├── metrics.py
+│   ├── model.py
+│   ├── plot_auc_by_year.py
+│   ├── plot_equity_curve_comparison.py
+│   ├── plot_macro_variables.py
+│   ├── plot_model_metrics_heatmap.py
+│   ├── plot_multiagent_architecture.py
+│   ├── plot_project_pipeline_diagram.py
+│   ├── plot_target_construction_timeline.py
+│   ├── plot_walk_forward_validation.py
+│   ├── portfolio.py
+│   ├── portfolio_old.py
+│   ├── run_baseline.py
+│   ├── run_portfolio.py
+│   └── tune_models.py
+├── .gitignore
+├── Codigo.code-workspace
+├── readme.md
+├── rentabilidad por modelos.png
+└── requirements.txt
