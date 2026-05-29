@@ -1,0 +1,11 @@
+feature,mean_abs_shap
+excess_return,0.04402124
+ret_3m,0.02417261
+return_lag1,0.01678958
+vol_3m,0.014062513
+ret_6m,0.012917139
+vol_6m,0.011757475
+interest_rate,0.009657765
+rank_ret_3m,0.008748578
+unemployment,0.0059056184
+inflation,0.0033062254
